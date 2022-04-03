@@ -1,0 +1,417 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>My Projects</title>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="pace.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link rel="shortcut icon" href="Favicon.jpeg" type="image/jpeg">  
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+
+
+
+<script>
+  $(document).ready(function(){
+  Pace.on('done', function() {
+$('.p').delay(500).animate({top: '30%', opacity: '0'}, 3000, $.bez([0.19,1,0.22,1]));
+
+
+$('#preloader').delay(1500).animate({top: '-100%'}, 2000, $.bez([0.19,1,0.22,1]));
+
+TweenMax.from(".title", 2, {
+     delay: 1.8,
+          y: 10,
+          opacity: 0,
+          ease: Expo.easeInOut
+    })
+});
+  })
+
+$(document).ready(function(){
+  $("#project1").on("mouseover",function(){
+    $("#mainphoto").hide();
+    $("#mainphoto").attr("src","project1.jpeg");
+    $("#mainphoto").fadeIn();
+  })
+  $("#project2").on("mouseover",function(){
+    $("#mainphoto").hide();
+    $("#mainphoto").attr("src","project2.jpeg");
+    $("#mainphoto").fadeIn();
+  })
+  $("#project3").on("mouseover",function(){
+    $("#mainphoto").hide();
+    $("#mainphoto").attr("src","project3.jpeg");
+    $("#mainphoto").fadeIn();
+  })
+  $("#project4").on("mouseover",function(){
+    $("#mainphoto").hide();
+    $("#mainphoto").attr("src","project4.jpeg");
+    $("#mainphoto").fadeIn();
+  })
+  $("#project5").on("mouseover",function(){
+    $("#mainphoto").hide();
+    $("#mainphoto").attr("src","project5.jpeg");
+    $("#mainphoto").fadeIn();
+  })
+  $("#project6").on("mouseover",function(){
+    $("#mainphoto").hide();
+    $("#mainphoto").attr("src","project6.jpeg");
+    $("#mainphoto").fadeIn();
+  })
+
+
+})//close of reading function
+</script>
+<style>
+    body{
+        background-color: black;
+    }
+    .projectname{
+    font-family: 'IBM Plex Mono', monospace;
+    color: white;
+    font-size: 200%;
+    position: absolute;
+    top: 30vh;
+    left:7%;
+    line-height: 220%;
+    }
+
+    #thumbnails {	
+	  text-align: left;
+    position:absolute;
+    width: 800px;
+    left: 28%;
+    top: 0;
+  
+    }
+
+    .thumb {
+	  width: 100%;
+    height: 100%;
+    border: 0px solid black;
+    }
+
+    #scrolling{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        height: 5%;
+        color: black;
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 20px;
+        background-color: white;
+    }
+
+#backmark{
+  position:absolute;
+  left: 6%;
+  top: 20vh;
+}
+
+.marquee-parent {
+  position: relative;
+  top: 96%;
+  width: 100%;
+  overflow: hidden;
+  height: 40px;
+  background-color: white;
+  z-index: 999;
+}
+.marquee-child {
+  display: block;
+  width:100%;
+  height: 30px;
+  /* height of your text div */
+  position:relative;
+  top: 8px;
+  animation: marquee 20s linear infinite; 
+  background-color: white;
+  font-family:'IBM Plex Mono', monospace;
+  font-size: 20px;
+}
+
+#main img{
+  position: relative;
+  display: block;
+  left:30%;
+  max-width:70%;
+  width: auto;
+  height: auto;
+}
+
+.cursor{
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #fff;
+  transition: 0.1s;
+  transform: translate(-50%,-50%);
+  pointer-events: none;
+}
+
+#project1:before{
+  content: '';
+  position: absolute;
+  top: 9%;
+  width:49%;
+  height:5px;
+  background:#fff;
+  transform:translateY(-50%)scaleX(0);
+  transform-origin: right;
+  transition: 0.5s transform;
+}
+#project1:hover::before{
+  transform:translateY(-50%)scaleX(1);
+  transform-origin: left;
+  transition: 0.5s transform;
+}
+
+#project2:before{
+  content: '';
+  position: absolute;
+  top: 25%;
+  width:55%;
+  height:5px;
+  background:#fff;
+  transform:translateY(-50%)scaleX(0);
+  transform-origin: right;
+  transition: 0.5s transform;
+}
+#project2:hover::before{
+  transform:translateY(-50%)scaleX(1);
+  transform-origin: left;
+  transition: 0.5s transform;
+}
+
+#project3:before{
+  content: '';
+  position: absolute;
+  top: 42%;
+  width:45%;
+  height:5px;
+  background:#fff;
+  transform:translateY(-50%)scaleX(0);
+  transform-origin: right;
+  transition: 0.5s transform;
+}
+#project3:hover::before{
+  transform:translateY(-50%)scaleX(1);
+  transform-origin: left;
+  transition: 0.5s transform;
+}
+
+#project4:before{
+  content: '';
+  position: absolute;
+  top: 59%;
+  width:26%;
+  height:5px;
+  background:#fff;
+  transform:translateY(-50%)scaleX(0);
+  transform-origin: right;
+  transition: 0.5s transform;
+}
+#project4:hover::before{
+  transform:translateY(-50%)scaleX(1);
+  transform-origin: left;
+  transition: 0.5s transform;
+}
+
+#project5:before{
+  content: '';
+  position: absolute;
+  top: 75.5%;
+  width:104%;
+  height:5px;
+  background:#fff;
+  transform:translateY(-50%)scaleX(0);
+  transform-origin: right;
+  transition: 0.5s transform;
+}
+#project5:hover::before{
+  transform:translateY(-50%)scaleX(1);
+  transform-origin: left;
+  transition: 0.5s transform;
+}
+
+#project6:before{
+  content: '';
+  position: absolute;
+  top: 92%;
+  width:60%;
+  height:5px;
+  background:#fff;
+  transform:translateY(-50%)scaleX(0);
+  transform-origin: right;
+  transition: 0.5s transform;
+}
+#project6:hover::before{
+  transform:translateY(-50%)scaleX(1);
+  transform-origin: left;
+  transition: 0.5s transform;
+}
+
+
+@keyframes marquee {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+.pace {
+      pointer-events: none;
+      user-select: none;
+      z-index: 2000;
+      position: fixed;
+      margin: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 400px;
+      border: 0px;
+      height: 1px;
+      overflow: hidden;
+      background:#1b1b1b;
+    }
+    
+    .pace .pace-progress {
+      box-sizing: border-box;
+      transform: translate3d(0, 0, 0);
+      max-width: 500px;
+      position: fixed;
+      z-index: 2000;
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 100%;
+      height: 100%;
+      width: 100%;
+      background: grey;
+    }
+    
+    .pace.pace-inactive {
+      display: none;
+    }
+    
+    #preloader{
+      width:100%;
+      height:100%;
+      background:#101010;
+      font-family:'IBM Plex Mono', monospace;
+      font-size: 30pt;
+      overflow:hidden;
+      position:fixed;
+      transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    
+    .p {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+    }
+
+
+
+a:link { text-decoration: none; }
+
+a:hover { text-decoration: none; }
+
+a:active { text-decoration: none; }
+
+a { color: inherit; } 
+
+    </style>
+</head>
+<body>
+
+<div class="title">
+  <div id="backmark">
+    <a href="http://webdev.iyaclasses.com/~peiyisun/acad275/Personal%20Website/personal%20website%20new.html">
+    <img src="Back.png" width="5%">
+    </a>
+  </div><!--close of backmark-->
+
+
+    <div class="projectname">
+<a href="">
+      <div id=project1>
+    project 1
+    </div>
+</a>
+
+    <div id=project2>
+      <a href="">
+    Bookshelf+
+    </div>
+  </a>
+   
+  
+    <div id=project3>
+      <a href="">
+    The Haze
+    </div>
+  </a>
+
+
+    <div id=project4>
+      <a href="">
+    Lost
+    </div>
+  </a>
+
+
+    <div id=project5>
+      <a href="">
+    Bottles of Memories
+    </div>
+  </a>
+
+ 
+    <div id=project6>
+      <a href="">
+    Braexercise
+    </div>
+  </a>
+
+   
+  
+    </div><!--close of project name-->
+
+  
+
+    <div id="main">
+
+      <img src="project1.jpeg"  name="mainphoto" id="mainphoto">
+
+    </div>
+
+        <div class="marquee-parent">
+            <div class="marquee-child">
+              Designer &nbsp; Artist &nbsp; Disrupter &nbsp; Innovator
+              &nbsp;
+              Designer &nbsp; Artist &nbsp; Disrupter &nbsp; Innovator
+              &nbsp;
+              Designer &nbsp; Artist &nbsp; Disrupter &nbsp; Innovator
+           
+              
+            </div>
+          </div>
+          </div>
+
+          <div id="preloader">
+            <div class="p">LOADING...</div>
+        </div>
+</body>
+</html>

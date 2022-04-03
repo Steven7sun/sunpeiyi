@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Lost</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+		<link rel="shortcut icon" href="Favicon.jpeg" type="image/jpeg">  
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="pace.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<script>
+	 $(document).ready(function(){
+  Pace.on('done', function() {
+$('.p').delay(500).animate({top: '30%', opacity: '0'}, 3000, $.bez([0.19,1,0.22,1]));
+
+
+$('#preloader').delay(1500).animate({top: '-100%'}, 2000, $.bez([0.19,1,0.22,1]));
+
+TweenMax.from(".title", 2, {
+     delay: 1.8,
+          y: 10,
+          opacity: 0,
+          ease: Expo.easeInOut
+    })
+});
+  })
+  </script>
+
+  <style>
+  .pace {
+	pointer-events: none;
+	user-select: none;
+	z-index: 2000;
+	position: fixed;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 400px;
+	border: 0px;
+	height: 1px;
+	overflow: hidden;
+	background:#1b1b1b;
+  }
+  
+  .pace .pace-progress {
+	box-sizing: border-box;
+	transform: translate3d(0, 0, 0);
+	max-width: 500px;
+	position: fixed;
+	z-index: 2000;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 100%;
+	height: 100%;
+	width: 100%;
+	background: grey;
+  }
+  
+  .pace.pace-inactive {
+	display: none;
+  }
+  
+  #preloader{
+	width:100%;
+	height:100%;
+	background:#101010;
+	font-family:'IBM Plex Mono', monospace;
+	font-size: 30pt;
+	overflow:hidden;
+	position:fixed;
+	transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  
+  .p {
+	  position: absolute;
+	  top: 40%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  color: #fff;
+  }
+  </style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				
+
+				
+
+				<!-- Main -->
+					<div id="main" class="alt">
+						
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<div id="backmark">
+										<a href="http://webdev.iyaclasses.com/~peiyisun/acad275/Indiv%20Project%20Milestone:%20Content%20Build/Project%20page.html">
+										<img src="Back.png" width="50vh" left="6%" position="absolute">
+										</a>
+									  </div><!--close of backmark-->
+									  
+									<header class="major">
+										<h1>Lost</h1>
+									</header>
+									<span class="image main"><img src="Lost1.png" alt="" /></span>
+									<p>Inspired by my grandmother's symptoms of Alzheimer's and her memories of her childhood, I made this "lost" project. My grandmother has mild Alzheimer's disease and her memories are fading with the passage of time. I conducted interviews, fieldwork and archival research in order to capture the most important events in the elderly person's life, and to recreate the scenes in her memory.</p>
+									<p>I interviewed my grandmother, and during the interview, she talked to me about how she got lost in Tianjin when she was a child. Although the old woman's memory is not very clear nowadays, she can still recall some important buildings and road signs. After the interview, I followed the clues from my grandmother's mouth and went on a fifield trip to Tianjin. I also found a map of Tianjin from the 1940s and 1950s in the local library and tried to recreate the route that the old man had lost according to the map. In addition, the name of the project also comes from this, "lost" represents both the event of been lost, as well as his faded memories.</p>
+									<span class="image main"><img src="Lost2.png" alt="" /></span>
+									<p>These integrated and intertwined lines represent the thoughts in the brain, and with dementia, these lines of thought become increasingly sparse and confused. As the dementia becomes more severe, these lines disappear little by little, and at that point, the memory will be completely gone.</p>
+									<span class="image main"><img src="Lost3.png" alt="" /></span>
+									<p>I cut out a cardboard outline of an old man's head and wrapped the threads that represent his thoughts around it, and then I printed an old maps on fabric and embroidered different patterns and designs on them to enrich the maps. To further enhance the layering of the work and make it look richer visually, I cut the remaining laser paper and made a collage around the brain.</p>
+									<span class="image main"><img src="Lost4.png" alt="" /></span>
+									
+								</div>
+							</section>
+
+					</div>
+
+					
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

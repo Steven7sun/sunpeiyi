@@ -1,0 +1,147 @@
+<html>
+<head>
+<title>Peiyi Sun</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="pace.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+<style>
+ body{
+    background-color: black;
+ }
+
+ #outercontainer{
+     width: auto;
+     height: auto;
+     margin-left: 80px;
+     margin-right: 80px;
+     margin-top: 60pt; 
+   
+ }
+
+ .name{
+     position: relative;
+     font-size: 150;
+     font-family: 'IBM Plex Mono', monospace;
+     font-weight: 500;
+     color: white; 
+     }
+
+.subname{
+    font-size: 10vh;
+    font-family: 'IBM Plex Mono', monospace;
+     color: grey;
+}
+
+
+
+#backgroundvideo{
+    width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -2;
+}
+
+#namebox{
+    width: 900px;
+    height: 120pt;
+    color: rgba(0,0,0,0);
+    font-size: 18pt;
+    
+
+}
+
+#subname1:before{
+  content: '';
+  position: absolute;
+  top: 9%;
+  width:49%;
+  height:5px;
+  background:#fff;
+  transform:translateY(-50%)scaleX(0);
+  transform-origin: right;
+  transition: 0.5s transform;
+}
+#subname1:hover::before{
+  transform:translateY(-50%)scaleX(1);
+  transform-origin: left;
+  transition: 0.5s transform;
+}
+
+a:link { text-decoration: none; }
+
+a:hover { text-decoration: none; }
+
+a:active { text-decoration: none; }
+
+a { color: inherit; } 
+
+#overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background:black;
+    background:rgba(0,0,0,0.8);
+    filter:blur(10px);
+    -o-filter:blur(10px);
+    -ms-filter:blur(10px);
+    -moz-filter:blur(10px);
+    -webkit-filter:blur(10px);
+    z-index: -1;
+}
+
+</style>
+</head>
+<body>
+    <div class="title">
+        
+<div id="overlay">
+    <video id="backgroundvideo" autoplay loop muted poster="Abstract black liquid wave background  Luxurious design of elegant curves black material  Animation.mp4">
+        <source src="TV Footage w_ noise sound - broken vhs stock footage (Retro Noise).mp4" 
+        type="video/mp4">
+      </video>
+    </div>
+  
+<div id="outercontainer">
+   
+        <div id="namebox">
+            <div class="name">
+        <strong>Peiyi Sun</strong>
+        </div>
+        </div>
+      
+        <br>
+        <br>
+        <br>
+    <div id="subname1">
+       <a href="http://webdev.iyaclasses.com/~peiyisun/acad275/Indiv%20Project%20Milestone:%20Content%20Build/Project%20page.html">My Projects</a>
+        </div>
+        <br>
+    <div id="subname2">       
+        <a href="https://sunpeiyi.com/landing.html">About Me</a>
+        </div>
+        <br>
+    <div id="subname3"> 
+        <a href="https://sunpeiyi.com/landing.html">Contact</a>
+        </div>
+        <br>
+    <div class="name">
+        <strong>UI/UX Designer</strong>
+        </div>
+    </div><!--close of outercontainer-->
+   
+    </div>
+   
+</div>
+</body>
+</html>
